@@ -39,6 +39,18 @@
 
     <!-- Modernizr JS File -->
     <script src="js/modernizr.custom.js"></script>
+
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+
+    <!-- Intégration de mailjs -->
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("u-XIEFD6rqUwOQVxz");
+        })();
+    </script>
+
 </head>
 
 <body class="contact">
@@ -127,21 +139,21 @@
             <!-- Left Side Ends -->
             <!-- Contact Form Starts -->
             <div class="col-12 col-lg-8">
-                <form class="contactform" method="post" action="https://formsubmit.co/el/seveso">
+                <form class="contactform" method="post" action="">
                     <div class="contactform">
                         <div class="row">
                             <div class="col-12 col-md-4">
-                                <input type="text" name="name" placeholder="Votre nom">
+                                <input type="text" name="name" id="name" placeholder="Votre nom">
                             </div>
                             <div class="col-12 col-md-4">
-                                <input type="email" name="email" placeholder="Votre email" required>
+                                <input type="email" name="email" id="email" placeholder="Votre email" required>
                             </div>
                             <div class="col-12 col-md-4">
-                                <input type="text" name="subject" placeholder="Objet" required>
+                                <input type="text" name="subject" id="subject" placeholder="Objet" required>
                             </div>
                             <div class="col-12">
-                                <textarea name="message" placeholder="Votre message"></textarea>
-                                <button type="submit" class="button">
+                                <textarea name="message" id="message" placeholder="Votre message"></textarea>
+                                <button type="submit" class="button" onclick="sendMail()">
                                     <span class="button-text">Envoyer le message</span>
                                     <span class="button-icon fa fa-send"></span>
                                 </button>
