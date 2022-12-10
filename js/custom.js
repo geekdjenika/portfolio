@@ -94,7 +94,7 @@
 		$(".contactform").on("submit", function() {
 			$(".output_message").text("Envoi...");
 
-			var form = $(this);
+			const form = $(this);
 			$.ajax({
 				url: form.attr("action"),
 				method: form.attr("method"),
