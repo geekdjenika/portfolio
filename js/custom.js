@@ -79,27 +79,57 @@
         /* ----------------------------------------------------------- */
 
 		$(".contactform").on("submit", function() {
-			$(".output_message").text("Sending...");
+			$(".output_message").text("Envoi...");
 
-			var form = $(this);
-			$.ajax({
-				url: form.attr("action"),
-				method: form.attr("method"),
-				data: form.serialize(),
-				success: function(result) {
-					if (result == "success") {
+			var params = {
+				name : document.getElementById("name").value,
+				email : document.getElementById("email").value,
+				subject : document.getElementById("subject").value,
+				message : document.getElementById("message").value
+			};
+
+			const serviceID = "service_6f00kfb";
+
+			const templateID = "template_4afib6m";
+			emailjs.send(serviceID,templateID,params)
+				.then(
+					res => {
 						$(".form-inputs").css("display", "none");
 						$(".box p").css("display", "none");
 						$(".contactform").find(".output_message").addClass("success");
-						$(".output_message").text("Message Sent!");
-					} else {
-						$(".tabs-container").css("height", "440px");
+						$(".output_message").text("Message envoyé avec succès !");
+						document.getElementById("name").value = "";
+						document.getElementById("email").value = "";
+						document.getElementById("subject").value = "";
+						document.getElementById("message").value = "";
 
-						$(".contactform").find(".output_message").addClass("error");
-						$(".output_message").text("Error Sending!");
 					}
-				}
+				).catch((err) => {
+				$(".tabs-container").css("height", "440px");
+
+				$(".contactform").find(".output_message").addClass("error");
+				$(".output_message").text("échec lors de l'envoi !");
 			});
+
+			// var form = $(this);
+			// $.ajax({
+			// 	url: form.attr("action"),
+			// 	method: form.attr("method"),
+			// 	data: form.serialize(),
+			// 	success: function(result) {
+			// 		if (result == "success") {
+			// 			$(".form-inputs").css("display", "none");
+			// 			$(".box p").css("display", "none");
+			// 			$(".contactform").find(".output_message").addClass("success");
+			// 			$(".output_message").text("Message Sent!");
+			// 		} else {
+			// 			$(".tabs-container").css("height", "440px");
+			//
+			// 			$(".contactform").find(".output_message").addClass("error");
+			// 			$(".output_message").text("Error Sending!");
+			// 		}
+			// 	}
+			// });
 
 			return false;
 		});
