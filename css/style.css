@@ -177,6 +177,13 @@ body.light hr.separator {
   border-top: 1px solid #ddd;
 }
 
+a {
+  color: white;
+}
+a:hover {
+  color: #fa5b0f;
+}
+
 @media (min-width: 992px) {
   body.light .header ul.icon-menu li.icon-box {
     background-color: #eee;
