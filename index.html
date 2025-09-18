@@ -1,107 +1,354 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
-
-<head>
-    <meta name="google-site-verification" content="wwmoCZ1GeezRd4ayQWQEGb8K9bVg2JI8zzMjIO80KDY" />
-    <meta name="description" content="Développeur web et mobile passionné expérimenté en Angular, Spring Boot, Flutter, Ionic, WordPress.... Contactez-moi pour discuter de votre projet." />
-    <meta charset="utf-8">
-    <title>Aboubacar DJENIKA</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Google Fonts -->
-    <link href="../../css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-    <link href="../../css-1?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet">
-
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/preloader.min.css" rel="stylesheet">
-    <link href="css/circle.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/fm.revealator.jquery.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-
-    <link href="css/skins/orange.css" rel="stylesheet">
-
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-</head>
-
-<body class="home">
-<!-- Header -->
-<header class="header" id="navbar-collapse-toggle">
-    <!-- Menus -->
-    <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
-        <li class="icon-box active">
-            <i class="fa fa-home"></i>
-            <a href="index.html">
-                <h2>Accueil</h2>
-            </a>
-        </li>
-        <li class="icon-box">
-            <i class="fa fa-user"></i>
-            <a href="about.html">
-                <h2>CV</h2>
-            </a>
-        </li>
-        <li class="icon-box">
-            <i class="fa fa-briefcase"></i>
-            <a href="portfolio.html">
-                <h2>Portfolio</h2>
-            </a>
-        </li>
-        <li class="icon-box">
-            <i class="fa fa-envelope-open"></i>
-            <a href="contact.html">
-                <h2>Contact</h2>
-            </a>
-        </li>
-    </ul>
-    <!--Mobile menus-->
-    <nav class="d-block d-lg-none">
-        <div id="menuToggle">
-            <input type="checkbox">
-            <span></span>
-            <span></span>
-            <span></span>
-            <ul class="list-unstyled" id="menu">
-                <li class="active"><a href="index.html"><i class="fa fa-home"></i><span>Accueil</span></a></li>
-                <li><a href="about.html"><i class="fa fa-user"></i><span>CV</span></a></li>
-                <li><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
-                <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
-            </ul>
+    <head>
+        <!--=============== basic  ===============-->
+        <meta charset="UTF-8">
+        <title>Vbook - Creative  vCard  Resume Portflio  Template</title>
+        <meta name="robots" content="index, follow"/>
+        <meta name="keywords" content=""/>
+        <meta name="description" content=""/>
+        <!--=============== css  ===============-->	
+        <link type="text/css" rel="stylesheet" href="css/plugins.css">
+        <link type="text/css" rel="stylesheet" href="css/style.css">
+        <link type="text/css" rel="stylesheet" href="css/color.css">
+        <!--=============== favicons ===============-->
+        <link rel="shortcut icon" href="images/favicon.ico">
+    </head>
+    <body>
+        <!--Loader -->
+        <div class="body-preload">
+            <div class="pl-spinner2"><span></span></div>
         </div>
-    </nav>
-</header>
-<!-- Main Content -->
-<section class="container-fluid main-container container-home p-0 revealator-slideup revealator-once revealator-delay1">
-    <div class="color-block d-none d-lg-block"></div>
-    <div class="row home-details-container align-items-center">
-        <div class="col-lg-4 bg position-fixed d-none d-lg-block"></div>
-        <div class="col-12 col-lg-8 offset-lg-4 home-details text-left text-sm-center text-lg-left">
-            <div>
-                <img src="img/profil.jpg" class="img-fluid main-img-mobile d-none d-sm-block d-lg-none" alt="mon profil">
-                <h1 class="text-uppercase poppins-font">Je suis Aboubacar DJENIKA.<span>Développeur web et mobile</span></h1>
-                <p class="open-sans-font">Je suis un développeur web et mobile fullstack malien, j’aime travailler en équipe et je peux mener un projet web ou mobile de bout en bout.</p>
-                <a class="button" href="about.html">
-                    <span class="button-text">à propos de moi</span>
-                    <span class="button-icon fa fa-arrow-right"></span>
-                </a>
+        <!-- loader end  -->
+        <!-- main start  -->
+        <div id="main">
+            <!--main-container -->
+            <div class="main-container">
+                <!--header -->
+                <header class="main-header">
+                    <div class="header-titile">
+                        <h1>Kevin Antony</h1>
+                        <h4>Web designer</h4>
+                    </div>
+                    <a data-src="images/main.jpg" class="image-popup header-popup color-bg"><i class="fal fa-plus"></i></a>
+                    <div class="header-titile-img">
+                        <div class="bg"  data-bg="images/main.jpg" ></div>
+                    </div>
+                    <div class="main-menu-wrap">
+                        <!-- nav -->
+                        <nav class="nav-inner fl-wrap" id="menu">
+                            <ul>
+                                <li><a href="index.html" class="ajax"><i class="fal fa-home"></i> Home</a></li>
+                                <li><a href="resume.html" class="ajax"><i class="fal fa-address-card"></i> Resume</a></li>
+                                <li><a href="portfolio.html" class="ajax"><i class="fal fa-images"></i> Portfolio</a></li>
+                                <li><a href="contacts.html" class="ajax"><i class="fal fa-envelope"></i> Contacts</a></li>
+                                <li><a href="blog.html" class="ajax"><i class="fal fa-book"></i> Blog</a></li>
+                                <li>
+                                    <a href="#"><i class="fal fa-layer-group"></i> Pages</a>
+                                    <!--level 2 -->
+                                    <ul>
+                                        <li><a href="portfolio-single.html" class="ajax">Portfolio Single</a></li>
+                                        <li><a href="portfolio-single2.html" class="ajax">Portfolio Single 2</a></li>
+                                        <li><a href="blog-single.html" class="ajax">Blog Single</a></li>
+                                        <li><a href="404.html" class="ajax">404</a></li>
+                                    </ul>
+                                    <!--level 2 end -->
+                                </li>
+                            </ul>
+                        </nav>
+                        <!-- nav end-->
+                    </div>
+                    <a href="#" download="" class="header_btn gradient-bg"><i class="fas fa-download"></i> Download CV</a>
+                </header>
+                <!--header end-->
+                <!-- top-opt -->
+                <div class="top-opt">
+                    <div class="nav-button-wrap c_sb gradient-bg2">
+                        <div class="nav-button"><span></span><span></span><span></span></div>
+                    </div>
+                    <div class="page-subtitle"><a href="index.html" class="ajax"><i class="fal fa-home"></i></a><span></span></div>
+                    <a href="index.html" class="ajax mob-logo"><span></span><strong></strong></a>
+                    <a href="contacts.html" class="ajax to_contacts"><i class="far fa-envelope"></i> Get in Touch</a>
+                    <div class="share-btn show-share isShare gradient-bg2">
+                        <span>Share</span>
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                </div>
+                <!-- top-opt end -->
+                <!-- content-holder -->
+                <div class="content-holder">
+                    <!--wrapper -->
+                    <div id="wrapper">
+                        <!--scroll-bar -->
+                        <div class="scr-bar_container">
+                            <div class="content" data-pagetitle="About Me" data-pagesubtitle="Home">
+                                <div class="bg-top"></div>
+                                <div class="bg-bottom"></div>
+                                <!--section   -->
+                                <section class="hero-section">
+                                    <div class="bg-wrap hero-section_bg">
+                                        <div class="bg" data-bg="images/bg/1.jpg"></div>
+                                    </div>
+                                    <div class="hero-section-title">
+                                        <div class="row">
+                                            <div class="col-md-7">
+                                                <div class="rotate_text hero-decor-let">
+                                                    <div>Web Design</div>
+                                                    <div><span>Ui/Ux Design</span></div>
+                                                    <div>Branding</div>
+                                                    <div><span>Ecommerce</span></div>
+                                                </div>
+                                                <h2>Welcome to My portfolio</h2>
+ 
+												<div class="video_btn-wrap fl-wrap"><a data-src="https://vimeo.com/176916362" class="image-popup"><i class="fas fa-play gradient-bg"></i></a><span>Play  Video Presentation</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!-- section end  -->							
+                                <!--section   -->
+                                <section>
+                                    <div class="row">
+                                        <div class="col-md-7">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            </p>
+                                            <div class="facts-container fl-wrap">
+                                                <!-- inline-facts -->
+                                                <div class="inline-facts-wrap">
+                                                    <div class="inline-facts">
+                                                        <div class="milestone-counter">
+                                                            <div class="stats animaper">
+                                                                <div class="num" data-content="0" data-num="145">0</div>
+                                                            </div>
+                                                        </div>
+                                                        <h6>Finished projects</h6>
+                                                    </div>
+                                                </div>
+                                                <!-- inline-facts end -->
+                                                <!-- inline-facts  -->
+                                                <div class="inline-facts-wrap">
+                                                    <div class="inline-facts">
+                                                        <div class="milestone-counter">
+                                                            <div class="stats animaper">
+                                                                <div class="num" data-content="0" data-num="825">0</div>
+                                                            </div>
+                                                        </div>
+                                                        <h6>Working hours</h6>
+                                                    </div>
+                                                </div>
+                                                <!-- inline-facts end -->
+                                                <!-- inline-facts  -->
+                                                <div class="inline-facts-wrap">
+                                                    <div class="inline-facts">
+                                                        <div class="milestone-counter">
+                                                            <div class="stats animaper">
+                                                                <div class="num" data-content="0" data-num="15">0</div>
+                                                            </div>
+                                                        </div>
+                                                        <h6>Awards won</h6>
+                                                    </div>
+                                                </div>
+                                                <!-- inline-facts end --> 
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="hero-info-list fl-wrap">
+                                                <ul>
+                                                    <li><strong>Age</strong><span>24</span></li>
+                                                    <li><strong>Freelance</strong><span>Available</span></li>
+                                                    <li><strong>Residence</strong><span>Ukraine</span></li>
+                                                    <li><strong>Address</strong><span>Kharkiv</span></li>
+                                                    <li><strong>Hobby</strong><span>Footbal , Traveling</span></li>
+                                                </ul>
+                                                <a href="portfolio.html" class="btn ajax fl-btn color-bg"><span>My Portfolio</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!-- section end  -->						
+                                <section class="serv-sec">
+                                    <div class="section-title fl-wrap">
+                                        <h3>Services That I Provide</h3>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="column-wrapper_text services-item fl-wrap">
+                                                <span class="serv-number">01.</span>
+                                                <i class="fal fa-desktop"></i>
+                                                <h4> Web Design</h4>
+                                                <p>Praesent nec leo venenatis elit semper aliquet id ac enim. Maecenas nec mi leo. Etiam venenatis ut dui non hendrerit. Integer dictum, diam vitae blandit accumsan, dolor odio tempus arcu .</p>
+                                                <ul class="serv-list">
+                                                    <li>Code</li>
+                                                    <li>Design</li>
+                                                    <li>Photoshop</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="column-wrapper_text services-item fl-wrap">
+                                                <span class="serv-number">02.</span>
+                                                <i class="fab fa-pagelines"></i>
+                                                <h4> Branding</h4>
+                                                <p>Praesent nec leo venenatis elit semper aliquet id ac enim. Maecenas nec mi leo. Etiam venenatis ut dui non hendrerit. Integer dictum, diam vitae blandit accumsan, dolor odio tempus arcu .</p>
+                                                <ul class="serv-list">
+                                                    <li>Logos</li>
+                                                    <li>Design</li>
+                                                    <li>Concept</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="column-wrapper_text services-item fl-wrap">
+                                                <span class="serv-number">03.</span>
+                                                <i class="fal fa-mobile-android"></i>
+                                                <h4> UI/UX Design</h4>
+                                                <p>Praesent nec leo venenatis elit semper aliquet id ac enim. Maecenas nec mi leo. Etiam venenatis ut dui non hendrerit. Integer dictum, diam vitae blandit accumsan, dolor odio tempus arcu .</p>
+                                                <ul class="serv-list">
+                                                    <li> Commercials</li>
+                                                    <li> Personal </li>
+                                                    <li> Store </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="column-wrapper_text services-item fl-wrap">
+                                                <span class="serv-number">03.</span>
+                                                <i class="fal fa-camera-alt"></i>
+                                                <h4>Photography</h4>
+                                                <p>Praesent nec leo venenatis elit semper aliquet id ac enim. Maecenas nec mi leo. Etiam venenatis ut dui non hendrerit. Integer dictum, diam vitae blandit accumsan, dolor odio tempus arcu .</p>
+                                                <ul class="serv-list">
+                                                    <li> Commercials</li>
+                                                    <li> Weddings </li>
+                                                    <li> Portraits  </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!--section  --> 
+                                <section class="scroll_sec" id="sec5">
+                                    <div class="section-title fl-wrap">
+                                        <h3>Clents And Testimonilas</h3>
+                                    </div>
+                                    <div class="testilider fl-wrap">
+                                        <div class="swiper-container">
+                                            <div class="swiper-wrapper">
+                                                <!-- swiper-slide -->
+                                                <div class="swiper-slide">
+                                                    <div class="testi-item fl-wrap">
+                                                        <span class="testi-number">01.</span>
+                                                        <div class="testi-avatar"><img src="images/avatar/1.jpg" alt=""></div>
+                                                        <h3>Liza Mirovsky</h3>
+                                                        <p>"All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over "</p>
+                                                        <a href="#" class="teti-link" target="_blank">Via Twitter</a>
+                                                    </div>
+                                                </div>
+                                                <!-- swiper-slide end-->
+                                                <!-- swiper-slide -->
+                                                <div class="swiper-slide">
+                                                    <div class="testi-item fl-wrap">
+                                                        <span class="testi-number">02.</span>
+                                                        <div class="testi-avatar"><img src="images/avatar/1.jpg" alt=""></div>
+                                                        <h3>Andy Smith</h3>
+                                                        <p>"Vestibulum orci felis, ullamcorper non condimentum non, ultrices ac nunc. Mauris non ligula suscipit, vulputate mi accumsan, dapibus felis. Nullam sed sapien dui. Nulla auctor sit amet sem non porta. "</p>
+                                                        <a href="#" class="teti-link" target="_blank">Via Facebook</a>
+                                                    </div>
+                                                </div>
+                                                <!-- swiper-slide end-->
+                                                <!-- swiper-slide -->
+                                                <div class="swiper-slide">
+                                                    <div class="testi-item fl-wrap">
+                                                        <span class="testi-number">03.</span>
+                                                        <div class="testi-avatar"><img src="images/avatar/1.jpg" alt=""></div>
+                                                        <h3>Mery Trust</h3>
+                                                        <p>"All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over "</p>
+                                                        <a href="#" class="teti-link" target="_blank">Via Twitter</a>
+                                                    </div>
+                                                </div>
+                                                <!-- swiper-slide end-->
+                                                <!-- swiper-slide -->
+                                                <div class="swiper-slide">
+                                                    <div class="testi-item fl-wrap">
+                                                        <span class="testi-number">04.</span>
+                                                        <div class="testi-avatar"><img src="images/avatar/1.jpg" alt=""></div>
+                                                        <h3>Centa Simpson</h3>
+                                                        <p>"Vestibulum orci felis, ullamcorper non condimentum non, ultrices ac nunc. Mauris non ligula suscipit, vulputate mi accumsan, dapibus felis. Nullam sed sapien dui. Nulla auctor sit amet sem non porta. "</p>
+                                                        <a href="#" class="teti-link" target="_blank">Via Facebook</a>
+                                                    </div>
+                                                </div>
+                                                <!-- swiper-slide end-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ts-controls">
+                                        <div class="tc-button tc-button-prev"><i class="fal fa-angle-left"></i></div>
+                                        <div class="tc-button tc-button-next"><i class="fal fa-angle-right"></i></div>
+                                    </div>
+                                    <div class="ss-pagination-wrap">
+                                        <div class="tc-pagination slider-pag"></div>
+                                    </div>
+                                    <!-- client-list -->
+                                    <div class="fl-wrap client-list">
+                                        <ul class="">
+                                            <li><a href="#" target="_blank"><img src="images/clients/1.png" alt=""></a></li>
+                                            <li><a href="#" target="_blank"><img src="images/clients/1.png" alt=""></a></li>
+                                            <li><a href="#" target="_blank"><img src="images/clients/1.png" alt=""></a></li>
+                                            <li><a href="#" target="_blank"><img src="images/clients/1.png" alt=""></a></li>
+                                        </ul>
+                                        <!-- client-list end-->
+                                    </div>
+                                </section>
+                                <!--section end-->                							
+                                <div class="to-top-wrap">
+                                    <div class="to-top color-bg"><i class="fas fa-caret-up"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--scroll-bar end -->
+                        <!--share end -->
+                        <div class="share-wrapper">
+                            <div class="share-container isShare"></div>
+                        </div>
+                        <!--share end -->							
+                    </div>
+                    <!--wrapper end -->
+                    <!--page-load -->	
+                    <div class="page-load">
+                        <div class="pl-spinner"><span></span></div>
+                    </div>
+                    <!--page-load end -->
+                </div>
+                <!-- content-holder end -->
+                <!-- footer -->
+                <footer class="main-footer">
+                    <div class="footer-social">
+                        <ul>
+                            <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-pinterest-p"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="copyright">&#169; Vbook 2022. All rights reserved.</div>
+                </footer>
+                <!-- footer end -->	
+                <div class="nav-overlay"></div>
             </div>
+            <!-- main-container end -->
+            <!--body-bg -->
+            <div class="body-bg">
+                <div class="slider-thumb"></div>
+                <div class="cavas-wrap">
+                    <canvas id="liquid"></canvas>
+                </div>
+                <div class="dynamic-title"><span>Resume</span></div>
+            </div>
+            <!-- body-bg end -->
         </div>
-    </div>
-</section>
-
-<script src="js/jquery-3.5.0.min.js"></script>
-<script src="js/preloader.min.js"></script>
-<script src="js/fm.revealator.jquery.min.js"></script>
-<script src="js/imagesloaded.pkgd.min.js"></script>
-<script src="js/masonry.pkgd.min.js"></script>
-<script src="js/classie.js"></script>
-<script src="js/cbpGridGallery.js"></script>
-<script src="js/jquery.hoverdir.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/custom.js"></script>
-
-</body>
-
+        <!-- Main end -->
+        <!--=============== scripts  ===============-->
+        <script  src="js/jquery.min.js"></script>
+        <script  src="js/plugins.js"></script>
+        <script  src="js/scripts.js"></script>
+    </body>
 </html>
