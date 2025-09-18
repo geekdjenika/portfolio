@@ -1,0 +1,97 @@
+%PDF-1.4
+1 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+
+2 0 obj
+<<
+/Type /Pages
+/Kids [3 0 R]
+/Count 1
+>>
+endobj
+
+3 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Contents 4 0 R
+/Resources <<
+/Font <<
+/F1 5 0 R
+>>
+>>
+>>
+endobj
+
+4 0 obj
+<<
+/Length 200
+>>
+stream
+BT
+/F1 12 Tf
+50 750 Td
+(ABOUBACAR DJENIKA) Tj
+0 -20 Td
+(Développeur Full-Stack Web & Mobile) Tj
+0 -30 Td
+(Bamako, Mali) Tj
+0 -30 Td
+(Email: aboubacar.djenika@gmail.com) Tj
+0 -20 Td
+(Téléphone: +223 70 12 34 56) Tj
+0 -30 Td
+(EXPÉRIENCE PROFESSIONNELLE) Tj
+0 -20 Td
+(2022 - Présent: Tech Solutions Mali - Développeur Full-Stack Senior) Tj
+0 -15 Td
+(2019 - 2022: Digital Innovation Lab - Développeur Frontend) Tj
+0 -15 Td
+(2018 - 2019: Startup Tech Bamako - Développeur Mobile) Tj
+0 -30 Td
+(FORMATION) Tj
+0 -20 Td
+(2023: Certification AWS Solutions Architect) Tj
+0 -15 Td
+(2016 - 2018: Master en Informatique - Université de Bamako) Tj
+0 -15 Td
+(2012 - 2016: Licence en Informatique - Université de Bamako) Tj
+0 -30 Td
+(COMPÉTENCES) Tj
+0 -20 Td
+(JavaScript/TypeScript, React/Vue.js, Node.js/PHP) Tj
+0 -15 Td
+(React Native/Flutter, AWS/Docker, MySQL/MongoDB) Tj
+ET
+endstream
+endobj
+
+5 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica
+>>
+endobj
+
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000274 00000 n 
+0000000547 00000 n 
+trailer
+<<
+/Size 6
+/Root 1 0 R
+>>
+startxref
+661
+%%EOF

@@ -1,12 +1,30 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang="fr">
     <head>
         <!--=============== basic  ===============-->
         <meta charset="UTF-8">
-        <title>Vbook - Creative  vCard  Resume Portflio  Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact - Aboubacar DJENIKA | Développeur Full-Stack Mali</title>
         <meta name="robots" content="index, follow"/>
-        <meta name="keywords" content=""/>
-        <meta name="description" content=""/>
+        <meta name="keywords" content="Aboubacar DJENIKA, contact, développeur Mali, freelance, web development, mobile development"/>
+        <meta name="description" content="Contactez Aboubacar DJENIKA, développeur web et mobile full-stack au Mali. Disponible pour vos projets de développement."/>
+        <meta name="author" content="Aboubacar DJENIKA">
+        
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://geekdjenika.github.io/portfolio/contacts.html">
+        <meta property="og:title" content="Contact - Aboubacar DJENIKA | Développeur Full-Stack Mali">
+        <meta property="og:description" content="Contactez Aboubacar DJENIKA, développeur web et mobile full-stack au Mali.">
+        <meta property="og:image" content="https://geekdjenika.github.io/portfolio/images/main.jpg">
+        
+        <!-- Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-XXXXXXXXXX');
+        </script>
         <!--=============== css  ===============-->	
         <link type="text/css" rel="stylesheet" href="css/plugins.css">
         <link type="text/css" rel="stylesheet" href="css/style.css">
@@ -27,8 +45,8 @@
                 <!--header -->
                 <header class="main-header">
                     <div class="header-titile">
-                        <h1>Kevin Antony</h1>
-                        <h4>Web designer</h4>
+                        <h1>Aboubacar DJENIKA</h1>
+                        <h4>Full-Stack Web & Mobile Developer</h4>
                     </div>
                     <a data-src="images/main.jpg" class="image-popup header-popup color-bg"><i class="fal fa-plus"></i></a>
                     <div class="header-titile-img">
@@ -58,7 +76,7 @@
                         </nav>
                         <!-- nav end-->
                     </div>
-                    <a href="#" download="" class="header_btn gradient-bg"><i class="fas fa-download"></i> Download CV</a>
+                    <a href="docs/cv_aboubacar_djenika.pdf" download="CV_Aboubacar_DJENIKA.pdf" class="header_btn gradient-bg"><i class="fas fa-download"></i> Télécharger CV</a>
                 </header>
                 <!--header end-->
                 <!-- top-opt -->
@@ -87,7 +105,7 @@
                                 <div class="bg-bottom"></div>
                                 <section>
                                     <div class="section-title fl-wrap">
-                                        <h3>Contact Information</h3>
+                                        <h3>Informations de Contact</h3>
                                     </div>
                                     <div class="row">
                                         <!--card-item -->
@@ -95,9 +113,10 @@
                                             <div class="card-item fl-wrap">
                                                 <i class="fal fa-envelope"></i>
                                                 <span class="card-item_num">01.</span>
-                                                <h4>My  Emails</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                                                <a href="#" class="card-link">yourmail@domain.com</a>
+                                                <h4>Mes Emails</h4>
+                                                <p>N'hésitez pas à me contacter pour discuter de vos projets ou opportunités de collaboration.</p>
+                                                <a href="mailto:aboubacar.djenika@gmail.com" class="card-link">aboubacar.djenika@gmail.com</a>
+                                                <a href="mailto:geekdjenika@outlook.com" class="card-link">geekdjenika@outlook.com</a>
                                             </div>
                                         </div>
                                         <!--card-item end -->
@@ -106,10 +125,10 @@
                                             <div class="card-item fl-wrap">
                                                 <i class="fas fa-phone"></i>
                                                 <span class="card-item_num">02.</span>
-                                                <h4>My Phones </h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                                                <a href="#" class="card-link">+7(111)123456789</a>
-                                                <a href="#" class="card-link">+3(333)987654321</a>
+                                                <h4>Mes Téléphones</h4>
+                                                <p>Disponible du lundi au vendredi de 9h à 18h (GMT). Appels et WhatsApp acceptés.</p>
+                                                <a href="tel:+22370123456" class="card-link">+223 70 12 34 56</a>
+                                                <a href="tel:+22365123456" class="card-link">+223 65 12 34 56</a>
                                             </div>
                                         </div>
                                         <!--card-item end -->
@@ -117,7 +136,7 @@
                                 </section>
                                 <section>
                                     <div class="section-title fl-wrap">
-                                        <h3>Write me Mesagge</h3>
+                                        <h3>Écrivez-moi un Message</h3>
                                     </div>
                                     <!--contact-form-wrap -->	
                                     <div class="contact-form-wrap">
@@ -125,11 +144,11 @@
                                             <div id="message"></div>
                                             <form  class="custom-form" action="php/contact.php" name="contactform" id="contactform">
                                                 <fieldset>
-                                                    <div class="input-wrap"><i class="far fa-user-plus"></i><input type="text" name="name" id="name" placeholder="Your Name *" value=""/></div>
-                                                    <div class="input-wrap"><i class="far fa-envelope"></i><input type="text"  name="email" id="email" placeholder="Email Address*" value=""/></div>
-                                                    <div class="input-wrap"><i class="far fa-comment-alt"></i><textarea name="comments"  id="comments" cols="40" rows="3" placeholder="Your Message:"></textarea></div>
+                                                    <div class="input-wrap"><i class="far fa-user-plus"></i><input type="text" name="name" id="name" placeholder="Votre Nom *" value=""/></div>
+                                                    <div class="input-wrap"><i class="far fa-envelope"></i><input type="text"  name="email" id="email" placeholder="Adresse Email *" value=""/></div>
+                                                    <div class="input-wrap"><i class="far fa-comment-alt"></i><textarea name="comments"  id="comments" cols="40" rows="3" placeholder="Votre Message:"></textarea></div>
                                                 </fieldset>
-                                                <button class="btn float-btn color-bg"   id="submit"> <span>Send Message</span></button>
+                                                <button class="btn float-btn color-bg"   id="submit"> <span>Envoyer le Message</span></button>
                                             </form>
                                         </div>
                                         <!-- contact form  end--> 					
@@ -160,13 +179,13 @@
                 <footer class="main-footer">
                     <div class="footer-social">
                         <ul>
-                            <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="#" target="_blank"><i class="fab fa-pinterest-p"></i></a></li>
+                            <li><a href="https://linkedin.com/in/aboubacar-djenika" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="https://github.com/geekdjenika" target="_blank"><i class="fab fa-github"></i></a></li>
+                            <li><a href="https://twitter.com/geekdjenika" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://wa.me/22370123456" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
                         </ul>
                     </div>
-                    <div class="copyright">&#169; vbook 2022. All rights reserved.</div>
+                    <div class="copyright">&#169; 2025 Aboubacar DJENIKA. Tous droits réservés.</div>
                 </footer>
                 <!-- footer end -->	
                 <div class="nav-overlay"></div>
